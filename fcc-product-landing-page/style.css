@@ -179,9 +179,16 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--light-text);
 }
 li {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -193,13 +200,6 @@ li {
     align-items: center;
 }
 
-.logo {
-    flex: 1;
-}
-
-.nav {
-    flex: 1;
-}
 
 
 
@@ -211,6 +211,22 @@ li {
 .btn--sign-up {
     
     padding: 0.5em 1.5em;
+}
+
+/* Navigation */
+.nav__desktop {
+    display: none;
+    align-items: center;
+    margin: 0 auto;
+    gap: 2em;
+}
+
+.nav__desktop li > a{
+   font-weight: 200;
+   line-height: 27px;
+   letter-spacing: 0.2px;
+   font-size: 15px;
+
 }
 
 
@@ -256,3 +272,27 @@ li {
     
     top: 16px;
 }
+
+
+/* Navigation desktopg */
+
+@media (min-width: 900px) {
+
+    .mobile__btn {
+        display: none;
+    }
+    .nav {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__desktop {
+        display: flex;
+         
+    }
+
+    
+
+    
+}}

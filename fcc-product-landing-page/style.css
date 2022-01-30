@@ -128,7 +128,17 @@ select {
 }
 
 
+.nav__desktop {
+    display: none;
+}
+
+
 /* utilitty classes */
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
 
 .wrapper {
     width: 90vw;
@@ -142,4 +152,15 @@ select {
 .full-bleed {
     width: 100vw;
     margin-left: calc(50% -50vw);
+}
+
+/* seen only by screen readers */
+.sr-only {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }

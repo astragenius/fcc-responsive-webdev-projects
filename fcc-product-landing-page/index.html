@@ -12,20 +12,21 @@
 
 
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="wrapper header__container">
             <h1>
+                
                 <a href="#">
                     <img class="logo" src="./img/logo.svg" alt="Figmaland logo">
                 </a>
             </h1>
 
-            <nav class="nav" role="navigation">
+            <nav class="nav" role="navigation" id="nav-bar">
                 <ul id="menu" class="nav__mobile" >
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">Product</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">contact</a></li>
                 </ul>
 
                 <ul class="nav__desktop">
@@ -70,7 +71,7 @@
                     <button class="btn hero--btn">try for free</button>
                 </div>
                 <div class="hero__img">
-                    <img src="./img/hero-img.png" alt="Image of a Dashboard">
+                    <img src="./img/hero-img.png" alt="Image of a Dashboard" id="header-img">
                 </div>
             </div>
             
@@ -152,20 +153,22 @@
         <section class="process">
 
             <div class="wrapper">
-
-
-
-                <div class="process__heading">
-                    <h2>Quick & Easy Process</h2>
-                    <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                <div class="flex__container">
+                    
+                    <div class="process__heading">
+                        <h2>Quick & Easy Process</h2>
+                        <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                    </div>
+    
+                    <img src="./img/process-img.png" alt="Image of documents">
+    
+                    <div class="process__btns">
+                        <button>sign up for free</button>
+                        <button>find out more</button>
+                    </div>
                 </div>
 
-                <img src="./img/process-img.png" alt="Image of documents">
 
-                <div class="process__btns">
-                    <button>sign up for free</button>
-                    <button>find out more</button>
-                </div>
 
 
 
@@ -268,13 +271,13 @@
                     <p>Subscribe to get exclusive news & offer</p>
                 </div>
 
-                <form action="">
+                <form action="" id="form">
                     <fieldset>
                         
                         <label for="email"></label>
                         <input type="email" name="email" id="email" placeholder="Enter Your Email">
     
-                        <input type="submit" name="" id="" value="Subscribe">
+                        <input type="submit" name="" id="submit" value="Subscribe" >
                     </fieldset>
                 </form>
             </div>

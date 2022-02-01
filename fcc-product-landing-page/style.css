@@ -180,6 +180,16 @@ body {
             filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
 }
 
+.btn--blue {
+    background-color: var(--secondary-blue);
+
+}
+
+.btn--outline {
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+}
+
 a {
     text-decoration: none;
     
@@ -433,11 +443,69 @@ h2 {
 }
 
 
+/* Process Section */
+
+.process__heading {
+    text-align: left;
+    padding: 0 1em;
+}
+
+
+.btn__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    
+}
+.btn__container button {
+    padding: 0.4em 0;
+    margin-bottom: 1em;
+}
+
+
+
+
+/* OpenType section */
+
+.opentype__heading {
+    text-align: left;
+    padding: 0 1em;
+}
+
+
+
+/* businesse section */
+
+.businesse__heading {
+    text-align:  center;
+}
 
 
 
 
 
+/* Pricing section */
+
+.pricing__box {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    border: 1px solid var(--second-text);
+    padding: 2em;
+    max-width: 335px;
+    text-align: center;
+    
+}
+
+.pricing__box img {
+    max-width: 262px;
+    aspect-ratio: 1;
+}
+
+.pricing__box li {
+    padding-bottom: 1em;
+}
 
 
 

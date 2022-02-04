@@ -410,8 +410,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
-    gap: 4em;
+
 }
 
 .service__box {
@@ -518,6 +517,16 @@ h2 {
 
 .pricing__box__price {
     margin-bottom: 1.5em;
+}
+.pricing__box small {
+    font-size: var(--subtitle);
+    color: var(--second-text);
+}
+
+.price {
+    color: var(--primary-green);
+    font-size: var(--heading);
+    font-weight: 900;
 }
 
 .pricing__box ul {

@@ -190,6 +190,12 @@ body {
     border: 1px solid var(--primary-green);
 }
 
+.heading--layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     
@@ -436,8 +442,16 @@ h2 {
 
 
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
 
+    .box__container {
+        flex-wrap: nowrap;
+    }
+
+    .service__box {
+        max-width: 350px;
+        margin: 1em;
+    }
     
 }
 
@@ -518,6 +532,10 @@ h2 {
 
 /* Pricing section */
 
+.pricing__heading h2 {
+    text-align: center;
+}
+
 .pricing__container {
     display: flex;
     flex-wrap: wrap;
@@ -545,9 +563,11 @@ h2 {
 }
 .pricing__box__heading h3 {
     font-size: var(--title);
+    
 }
 .pricing__box__heading p {
     font-size: var(--subtitle);
+    
 }
 
 .pricing__box img {
@@ -584,6 +604,14 @@ h2 {
     padding: 0.8em 1.5em;
 }
 
+/* Pricing desktop */
+
+@media (min-width: 1200px) {
+    .pricing__box {
+        margin: 1em;
+    }
+}
+
 
 
 /* Subscribe SECTION */
@@ -601,14 +629,19 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-   
+    
+    
 }
 
 input {
+    margin: 0 auto;
     display: block;
     width: 100%;
+    max-width: 483px;
     border-radius: 10px;
     padding: 0.5em 1em; 
+    
+   
 }
 
 .subscribe--email {
@@ -618,6 +651,10 @@ input {
 .subscribe--btn {
     color: var(--light-text);
     border: none;
+}
+
+@media (min-width: 834px) {
+
 }
 
 

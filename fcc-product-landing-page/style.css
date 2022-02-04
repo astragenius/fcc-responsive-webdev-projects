@@ -580,6 +580,50 @@ input {
 
 
 
+/* Footer Section */
+
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer__map {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    
+}
+
+address {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+   
+    
+    
+}
+
+address + div {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.social-links {
+    display: flex;
+    
+}
+
+
+
 
 
 

@@ -473,6 +473,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 2em;
+    width: 100%;
     
 }
 .btn__container button {
@@ -488,17 +489,27 @@ h2 {
 
 @media (min-width: 834px) {
 
-    .flex__container {
-       
-
-    }
-
+    
     .btn__container button {
         max-width: 338px;
     }
-
-
     
+    
+    
+}
+
+@media (min-width: 1200px) {
+    
+    .desktop__flex__process {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .process img {
+        margin: 0;
+    }
+
 }
 
 
@@ -516,6 +527,19 @@ h2 {
 }
 
 
+@media (min-width: 1200px) {
+
+    .desktop__flex__opentype {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .opentype img {
+        margin: 0;
+    }
+}
+
+
 
 /* businesse section */
 .businesse img {
@@ -524,6 +548,21 @@ h2 {
 
 .businesse__heading {
     text-align:  center;
+}
+
+
+@media (min-width: 1200px) {
+
+    .desk__flex__businesse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .businesse img {
+        margin: 0;
+    }
 }
 
 
@@ -653,7 +692,21 @@ input {
     border: none;
 }
 
-@media (min-width: 834px) {
+@media (min-width: 1200px) {
+
+   fieldset {
+       display: flex;
+       justify-content: center;
+      
+   }
+   input {
+       margin: initial;
+       margin-right: 1em;
+       width: initial;
+
+      
+       
+   }
 
 }
 
@@ -664,7 +717,7 @@ input {
 
 .footer__links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
@@ -676,7 +729,7 @@ input {
 .footer__adress {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    
     
 }
 
@@ -698,7 +751,35 @@ address + div {
 }
 
 
+@media (min-width: 834px) {
 
+    .footer__adress {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .footer__flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__adress {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .social-links {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
 
 
 

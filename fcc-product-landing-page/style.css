@@ -425,6 +425,8 @@ h2 {
     padding: 1.5em;
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+
+    margin: 2em;
 }
 
 .service__box--gradient {
@@ -436,13 +438,15 @@ h2 {
 
 @media (min-width: 900px) {
 
-    .box__container {
-        gap: 1.937em;
-    }
+    
 }
 
 
 /* Process Section */
+
+.process img {
+    margin: 0 auto;
+}
 
 .process__heading {
     text-align: left;
@@ -452,19 +456,45 @@ h2 {
 
 .btn__container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0 2em;
     
 }
 .btn__container button {
+    
     padding: 0.4em 0;
     margin-bottom: 1em;
+    
+    flex: 100%;
+      
+}
+
+/* Process mobile version */
+
+@media (min-width: 834px) {
+
+    .flex__container {
+       
+
+    }
+
+    .btn__container button {
+        max-width: 338px;
+    }
+
+
+    
 }
 
 
 
 
 /* OpenType section */
+
+.opentype img {
+    margin: 0 auto;
+}
 
 .opentype__heading {
     text-align: left;
@@ -474,6 +504,9 @@ h2 {
 
 
 /* businesse section */
+.businesse img {
+    margin: 0 auto;
+}
 
 .businesse__heading {
     text-align:  center;
@@ -485,6 +518,13 @@ h2 {
 
 /* Pricing section */
 
+.pricing__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .pricing__box {
     display: flex;
     flex-direction: column;
@@ -495,6 +535,8 @@ h2 {
     padding: 2em;
     max-width: 335px;
     text-align: center;
+
+    margin: 3em;
     
 }
 
@@ -509,7 +551,7 @@ h2 {
 }
 
 .pricing__box img {
-    max-width: 262px;
+    max-width: 252px;
     aspect-ratio: 1;
     margin-bottom: 1.5em;
 
@@ -603,11 +645,7 @@ input {
 
 address {
     display: flex;
-    align-items: center;
-    justify-content: baseline;
-   
-    
-    
+    align-items: center;    
 }
 
 address + div {

@@ -544,6 +544,42 @@ h2 {
 
 
 
+/* Subscribe SECTION */
+
+.subscribe fieldset {
+    border: none;
+}
+.subscribe__heading {
+    text-align: center;
+}
+.subscribe__heading h2 {
+    font-size: var(--second-heading);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5em 1em; 
+}
+
+.subscribe--email {
+    border: 1px solid #DEDEDE;
+}
+
+.subscribe--btn {
+    color: var(--light-text);
+    border: none;
+}
+
+
+
 
 
 

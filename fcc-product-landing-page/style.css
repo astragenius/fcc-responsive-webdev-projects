@@ -490,7 +490,7 @@ h2 {
 }
 .btn__container button {
     
-    padding: 0.4em 0;
+    padding: 0.5em 0;
     margin-bottom: 1em;
     
     flex: 100%;
@@ -499,16 +499,13 @@ h2 {
 
 /* Process mobile version */
 
-@media (min-width: 834px) {
+@media (min-width: 768px) {
 
     
     .btn__container button {
         max-width: 338px;
     }
 
-    .btn__container {
-        max-width: 30%;
-    }
     
     
     
@@ -525,7 +522,10 @@ h2 {
     .process img {
         margin: 0;
     }
-
+    
+    .btn__container {
+        max-width: 30%;
+    }
 }
 
 
@@ -695,6 +695,7 @@ input {
     max-width: 483px;
     border-radius: 10px;
     padding: 0.5em 1em; 
+    margin-bottom: 1em;
     
    
 }
@@ -762,8 +763,8 @@ input {
 
 address {
     display: flex;
-    align-items: center;    
-    padding-top: 1em;
+    align-items: center;    g
+    padding-top: 1em;padding-toppadding-toppadding-toppadding-toppadding-toppadding-toppadding-top
 }
 
 address + div {
@@ -789,6 +790,10 @@ address + div {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .social-links {
+        width: initial;
     }
 }
 

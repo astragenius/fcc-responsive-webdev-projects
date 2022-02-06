@@ -221,12 +221,22 @@ ul {
     color: var(--light-text);
     -webkit-filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+    transition: all .4s ease-in-out;
+}
+
+.btn--outline-light:hover {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
 }
 
 .btn--blue {
     background-color: var(--secondary-blue);
     color: var(--light-text);
-    
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn--blue:hover {
+    transform: scale(1.1);
 }
 
 .btn--outline-green {
@@ -234,6 +244,11 @@ ul {
     border: 1px solid var(--primary-green);
     -webkit-filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
             filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+    transition: all .4s ease-in-out;
+}
+.btn--outline-green:hover {
+    background-color: var(--primary-green);
+    color: var(--light-text);
 }
 
 
@@ -396,8 +411,14 @@ h2 {
 .started--btn {
     background-color: var(--light-bg);
     color: var(--secondary-dark-blue);
-    border: none;
-    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);    
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    transition: all .4s ease-in;    
+}
+.started--btn:hover {
+    background-color: transparent;
+    color: var(--light-text);
+    border: 1px solid var(--light-bg);
+
 }
 .hero__img {
     padding-bottom: 1.5em;

@@ -23,17 +23,17 @@
 
             <nav class="nav" role="navigation" id="nav-bar">
                 <ul id="menu" class="nav__mobile" >
-                    <li><a class="nav-link" href="#">Home</a></li>
-                    <li><a class="nav-link" href="#">Product</a></li>
-                    <li><a class="nav-link" href="#">About</a></li>
-                    <li><a class="nav-link" href="#">contact</a></li>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#product">Product</a></li>
+                    <li><a class="nav-link" href="#footer">About</a></li>
+                    <li><a class="nav-link" href="#letter">contact</a></li>
                 </ul>
 
                 <ul class="nav__desktop">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#footer">About</a></li>
+                    <li><a href="#letter">contact</a></li>
                 </ul>
 
                 <div class="header__btn--container">
@@ -58,7 +58,7 @@
 
         
 
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="wrapper hero__container">
                 
                 <div class="hero__heading">
@@ -82,6 +82,8 @@
 
 
     <main>
+
+       
 
         <section class="services section--spacer">
 
@@ -214,7 +216,7 @@
                     <p>Being a freelancer is a rollercoaster of emotions. We build Slate to keep your freelance business less stressful...</p>
                 </div>
                 <div class="desk__flex__businesse">
-                    <img src="./img/business-img.svg" alt="">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/axDzyLEfYgU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
                     <div class="btn__container">
                         <button class="btn btn--blue">sign up for free</button>
@@ -228,7 +230,8 @@
         </section>
 
 
-        <section class="pricing section--spacer">
+        <section class="pricing section--spacer" id="product">
+            
             <div class="wrapper">
 
                 <div class="pricing__heading heading--layout">
@@ -341,7 +344,7 @@
             <hr>
         </div>
 
-        <section class="subscribe section--spacer">
+        <section class="subscribe section--spacer" id="letter">
             <div class="wrapper">
                 <div class="subscribe__heading heading--layout">
                     <h2>Subscribe</h2>
@@ -364,7 +367,7 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
         <div class="wrapper footer__flex">
 
@@ -417,6 +420,6 @@
     </footer>
     
 
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

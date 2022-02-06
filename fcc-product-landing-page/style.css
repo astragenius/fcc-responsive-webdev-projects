@@ -605,8 +605,12 @@ h2 {
 
 
 /* businesse section */
-.businesse img {
+.businesse iframe {
     margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
 .businesse__heading {

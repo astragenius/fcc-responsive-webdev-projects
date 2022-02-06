@@ -479,6 +479,19 @@ h2 {
     border-radius: 10px;
 
     margin: 2em;
+
+    transition: transform .3s ease-in-out;
+}
+
+
+
+.service__box:hover {
+    transform: scale(1.1);
+}
+
+.service__box a:hover {
+
+    color: var(--secondary-dark-blue);
 }
 
 .service__box--gradient {

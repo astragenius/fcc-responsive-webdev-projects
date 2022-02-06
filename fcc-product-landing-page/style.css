@@ -201,6 +201,10 @@ body {
     margin-bottom: 5em;
 }
 
+.heading--spacer {
+    padding-bottom: 1em;
+}
+
 .hr--spacer {
     margin-bottom: 3.5rem;
 }
@@ -679,6 +683,7 @@ h2 {
 }
 .subscribe__heading h2 {
     font-size: var(--second-heading);
+    padding-bottom: 0.4em;
 }
 
 form {
@@ -764,7 +769,7 @@ input {
 address {
     display: flex;
     align-items: center;    g
-    padding-top: 1em;padding-toppadding-toppadding-toppadding-toppadding-toppadding-toppadding-top
+    padding-top: 1em;padding-toppadding-toppadding-toppadding-toppadding-toppadding-toppadding-toppadding-toppadding-top
 }
 
 address + div {

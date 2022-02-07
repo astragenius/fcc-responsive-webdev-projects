@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Technical Documentation Page - FCC</title>
 </head>
 <body>
     
-    <header>
+    <header class="main-header" id="header">
         <h1>JS Documentation</h1>
-        <nav>
+        <nav id="navbar">
 
            <ul>
-               <li><a href="">Introduction</a></li>
-               <li><a href="">What you should already know</a></li>
-               <li><a href="">JavaScript and Java</a></li>
-               <li><a href="">Hello world</a></li>
-               <li><a href="">Variables</a></li>
-               <li><a href="">Declaring variables</a></li>
-               <li><a href="">Variable scope</a></li>
-               <li><a href="">Global variables</a></li>
-               <li><a href="">Constants</a></li>
-               <li><a href="">Data types</a></li>
-               <li><a href="">if...else statement</a></li>
-               <li><a href="">while statement</a></li>
-               <li><a href="">Function declarations</a></li>
-               <li><a href="">Reference</a></li>
+               <li><a class="nav-link" href="">Introduction</a></li>
+               <li><a class="nav-link" href="">What you should already know</a></li>
+               <li><a class="nav-link" href="">JavaScript and Java</a></li>
+               <li><a class="nav-link" href="">Hello world</a></li>
+               <li><a class="nav-link" href="">Variables</a></li>
+               <li><a class="nav-link" href="">Declaring variables</a></li>
+               <li><a class="nav-link" href="">Variable scope</a></li>
+               <li><a class="nav-link" href="">Global variables</a></li>
+               <li><a class="nav-link" href="">Constants</a></li>
+               <li><a class="nav-link" href="">Data types</a></li>
+               <li><a class="nav-link" href="">if...else statement</a></li>
+               <li><a class="nav-link" href="">while statement</a></li>
+               <li><a class="nav-link" href="">Function declarations</a></li>
+               <li><a class="nav-link" href="">Reference</a></li>
            </ul>
 
         </nav>
 
     </header>
 
-    <main>
+    <main class="wrapper" id="main-doc">
 
-            <section>
-                <h2>
-                    Introduction
-                </h2>
+            <section class="main-section" id="introduction">
+                <header>
+                    <h2>
+                        Introduction
+                    </h2>
+                </header>
                 <p>
                     JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. 
                 </p>
@@ -58,10 +61,13 @@
 
             </section>
 
-            <section>
-                <h2>
-                    What you should already know
-                </h2>
+            <section class="main-section" id="what_you_should_already_know">
+                <header>
+                    <h2>
+                        What you should already know
+                    </h2>
+
+                </header>
                 <p>This guide assumes you have the following basic background:</p>
                 <ul>
                     <li>A general understanding of the Internet and the World Wide Web (WWW). </li>
@@ -71,10 +77,13 @@
             </section>
 
 
-            <section>
-                <h2>
-                    JavaScript and Java
-                </h2>
+            <section class="main-section" id="javascript_&_java">
+                <header>
+
+                    <h2>
+                        JavaScript and Java
+                    </h2>
+                </header>
                 <p>
                     JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript. 
                 </p>
@@ -87,26 +96,32 @@
                 </p>
             </section>
 
-            <section>
-                <h2>
-                    Hello World
-                </h2>
+            <section class="main-section" id="hello_world">
+                <header>
+                    <h2>
+                        Hello World
+                    </h2>
+                </header>
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: </p>
-
+                <div class="code">
                 <pre>
-                
-                    <code>
-                        function greetMe(yourName) { alert("Hello " + yourName); }
-                        greetMe("World");
-                    </code>
+                    
+                            <code>
+                            function greetMe(yourName) { alert("Hello " + yourName); }
+                            greetMe("World");
+                            </code>
                 </pre>
+
+                </div>
                 <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </p>
             </section>
 
-            <section>
-                <h2>
-                    Variables
-                </h2>
+            <section class="main-section" id="variables">
+                <header>
+                    <h2>
+                        Variables
+                    </h2>
+                </header>
                 <p>
                     You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules. 
                 </p>
@@ -118,10 +133,12 @@
                 </p>
             </section>
 
-            <section>
-                <h2>
-                    Declaring variables
-                </h2>
+            <section class="main-section" id="declaring_variables">
+                <header>
+                    <h2>
+                        Declaring variables
+                    </h2>
+                </header>
                 <p>You can declare a variable in three ways:</p>
                 <p>With the key word var. For example,</p>
                 <pre>
@@ -147,10 +164,12 @@
                 <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
             </section>
 
-            <section>
-                <h2>
-                    Variable scope
-                </h2>
+            <section class="main-section" id="variable_scope">
+                <header>
+                    <h2>
+                        Variable scope
+                    </h2>
+                </header>
                 <p>
                     You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. 
                 </p>
@@ -173,8 +192,10 @@
 
             </section>
 
-            <section>
-                <h2>Global variables</h2>
+            <section class="main-section" id="global_variables">
+                <header>
+                    <h2>Global variables</h2>
+                </header>
                 <p>
                     Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax. 
                 </p>
@@ -183,10 +204,12 @@
                 </p>
             </section>
 
-            <section>
-                <h2>
-                    Constants
-                </h2>
+            <section class="main-section" id="constants">
+                <header>
+                    <h2>
+                        Constants
+                    </h2>
+                </header>
                 <p>
                     You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters. 
                 </p>
@@ -222,8 +245,10 @@
                 </pre>
             </section>
 
-            <section>
-                <h2>Data types</h2>
+            <section class="main-section" id="data_types">
+                <header>
+                    <h2>Data types</h2>
+                </header>
                 <p>The latest ECMAScript standard defines seven data types:</p>
                 <ul>
                     <li>Six data types that are primitives</li>
@@ -242,8 +267,10 @@
                 </p>
             </section>
 
-            <section>
-                <h2>if...else statement</h2>
+            <section class="main-section" id="if_else_statement">
+                <header>
+                    <h2>if...else statement</h2>
+                </header>
                 <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows: </p>
                 <pre>
                     <code>
@@ -291,8 +318,10 @@
                 </pre>
             </section>
 
-            <section>
-                <h2>While statement</h2>
+            <section class="main-section" id="while_statement">
+                <header>
+                    <h2>While statement</h2>
+                </header>
                 <p>
                     A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows: 
                 </p>
@@ -328,8 +357,10 @@
                </p>
             </section>
 
-            <section>
-                <h2>Function declarations</h2>
+            <section class="main-section" id="function_declarations">
+                <header>
+                    <h2>Function declarations</h2>
+                </header>
                 <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by: </p>
                 <ul>
                     <li>The name of the function.</li>
@@ -355,8 +386,10 @@
                 </p>
             </section>
 
-            <section>
-                <h2>Reference</h2>
+            <section class="main-section" id="reference">
+                <header>
+                    <h2>Reference</h2>
+                </header>
                 <ul>
                     <li>All the Documentation in this page is taken from <a href="">MDN</a></li>
                 </ul>
@@ -383,6 +416,6 @@
 
 
 
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
